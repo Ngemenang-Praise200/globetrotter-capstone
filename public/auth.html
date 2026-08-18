@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log in or create an account — GlobeTrotter Bamenda &amp; Environs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="login-page">
+  <div class="app-shell">
+    <header>
+      <h1><a href="/" class="brand-link">GlobeTrotter</a></h1>
+      <p>Travel recommendations and itinerary planning for Bamenda and its environs, Cameroon.</p>
+    </header>
+
+    <main>
+      <section id="auth-panel" class="card">
+        <div class="auth-intro">
+          <span class="tag">Travel • Discover • Plan</span>
+          <h2>Welcome to GlobeTrotter</h2>
+          <p>Sign in to discover Bamenda, save an itinerary, and get practical travel guidance.</p>
+        </div>
+
+        <form id="login-form" class="auth-form">
+          <label>Email<input type="email" id="login-email" required /></label>
+          <label>Password<input type="password" id="login-password" required /></label>
+          <button type="submit">Login as user</button>
+          <p id="login-feedback" class="form-feedback" role="alert" aria-live="polite"></p>
+        </form>
+
+        <div id="auth-switch" class="auth-switch">
+          <span>Don’t have an account?</span>
+          <button type="button" id="show-register-button">Create new account</button>
+        </div>
+
+        <form id="register-form" class="auth-form hidden">
+          <label>Name<input type="text" id="register-name" minlength="2" maxlength="80" autocomplete="name" required /></label>
+          <label>Email<input type="email" id="register-email" required /></label>
+          <label>Password<input type="password" id="register-password" minlength="8" autocomplete="new-password" required /><small>Use at least 8 characters.</small></label>
+          <label>Your Bamenda area (optional)
+            <input type="text" id="register-location" list="bamenda-areas" placeholder="Choose your area" />
+            <datalist id="bamenda-areas">
+              <option value="Bamenda City Centre"><option value="Commercial Avenue"><option value="Mankon"><option value="Nkwen"><option value="Up Station"><option value="Mile 2"><option value="Mile 3"><option value="Mile 4"><option value="Foncha Junction"><option value="New Road"><option value="Old Town"><option value="Ntarikon"><option value="Mendankwe"><option value="Bambui"><option value="Bambili">
+            </datalist>
+            <small>This is only used to personalize suggestions — you can leave it blank.</small>
+          </label>
+          <label class="consent-control"><input type="checkbox" id="register-location-consent" /> Optional: let administrators see this area on the map. Unchecked by default — nothing is shared unless you tick this.</label>
+          <label>Interests
+            <select id="register-interests" multiple>
+              <option value="adventure">Adventure</option>
+              <option value="culture">Culture</option>
+              <option value="relaxation">Relaxation</option>
+              <option value="food">Food</option>
+              <option value="administrative">Administrative services</option>
+            </select>
+          </label>
+          <button type="submit">Create account</button>
+          <button type="button" id="show-login-button" class="secondary-button">Back to login</button>
+          <p id="register-feedback" class="form-feedback" role="alert" aria-live="polite"></p>
+        </form>
+
+        <a href="/" class="text-link back-link">← Back to browsing</a>
+      </section>
+    </main>
+  </div>
+
+  <script src="auth.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bamenda View — GlobeTrotter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>Discover Bamenda</h1>
+      <p>Explore the city through its landmarks, neighborhoods, and cultural highlights.</p>
+      <a class="text-link" href="/">Back to home</a>
+    </header>
+
+    <main>
+      <section class="card hero-card">
+        <div class="hero-content">
+          <span class="tag">Bamenda • Northwest Region</span>
+          <h2>Welcome to the city of Bamenda</h2>
+          <p>Bamenda is known for its cool climate, busy roads, and welcoming communities. It is a city where history, shopping, education, and local culture come together in a vibrant mix.</p>
+          <a class="text-link" href="#map-section">View the landmarks map</a>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <img src="/bamenda-overview.jpg" alt="A city view of Bamenda" />
+            <figcaption>City skyline view</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80" alt="A market scene" />
+            <figcaption>Local market atmosphere</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80" alt="A street scene" />
+            <figcaption>Street life in Bamenda</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-heading">
+          <h2>Notable places in Bamenda</h2>
+          <p>These neighborhoods and junctions shape the city’s daily rhythm and its travel experience.</p>
+        </div>
+        <div id="place-list" class="places-grid"></div>
+      </section>
+
+      <section id="map-section" class="card map-card">
+        <h2>Map of Bamenda landmarks</h2>
+        <div id="map" class="map"></div>
+        <p class="helper-text">The Nkwen Cultural Center is shown at Center Bolt Junction.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/view.js"></script>
+</body>
+</html>

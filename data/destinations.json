@@ -1,0 +1,478 @@
+[
+  {
+    "id": "d1",
+    "name": "Bamenda Market",
+    "category": "culture",
+    "tags": [
+      "market",
+      "shopping",
+      "local food",
+      "culture"
+    ],
+    "location": "Central Bamenda",
+    "address": "Central Market Road, Central Bamenda",
+    "description": "A lively market where visitors can buy local goods, try street food, and experience Bamenda daily life.",
+    "highlights": [
+      "Traditional crafts",
+      "Fresh produce",
+      "Food stalls"
+    ],
+    "lat": 5.9588,
+    "lon": 10.1587,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Food%20market%202.jpg?width=480",
+    "imageCredit": "AminouT, Wikimedia Commons (CC BY-SA)",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Food_market_2.jpg"
+  },
+  {
+    "id": "d3a",
+    "name": "Abi Fall Looked",
+    "category": "nature",
+    "tags": [
+      "waterfall",
+      "hiking",
+      "nature",
+      "Mbengwi"
+    ],
+    "location": "Mbengwi",
+    "address": "Abi Fall Looked, Mbengwi",
+    "description": "A breathtaking waterfall near Mbengwi known locally as Abi Fall Looked, perfect for hiking, nature walks, and waterfall photography.",
+    "image": "/abi-fall-resort-mbengwi.jpg",
+    "highlights": [
+      "Waterfall",
+      "Hiking",
+      "Photography"
+    ],
+    "lat": 6.21,
+    "lon": 10.066,
+    "imageCredit": "@wakabamenda"
+  },
+  {
+    "id": "d6",
+    "name": "Bamenda Hilltop Viewpoint",
+    "category": "adventure",
+    "tags": [
+      "viewpoint",
+      "hiking",
+      "sunset",
+      "adventure"
+    ],
+    "location": "Bamenda Hills",
+    "address": "Bamenda Hilltop Viewpoint, Bamenda Hills",
+    "description": "A scenic viewpoint reachable by foot or vehicle, offering panoramic views of Bamenda and surrounding hills.",
+    "highlights": [
+      "Sunset views",
+      "Photography",
+      "Outdoor adventure"
+    ],
+    "lat": 5.968,
+    "lon": 10.15,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bamenda%20from%20mountain%20road.jpg?width=480",
+    "imageCredit": "Wikimedia Commons contributor (CC BY-SA 3.0)",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Bamenda_from_mountain_road.jpg"
+  },
+  {
+    "id": "d10",
+    "name": "Bamenda Coffee Caf\u00e9",
+    "category": "food",
+    "tags": [
+      "cafe",
+      "coffee",
+      "relaxation",
+      "food"
+    ],
+    "location": "SONAC Street, Bamenda",
+    "address": "Bamenda Coffee Caf\u00e9, SONAC Street, Bamenda",
+    "description": "A cozy caf\u00e9 serving local coffee, pastries, and light meals with a relaxed atmosphere.",
+    "highlights": [
+      "Local coffee",
+      "Casual seating",
+      "Snacks"
+    ],
+    "lat": 5.9583,
+    "lon": 10.1589
+  },
+  {
+    "id": "d13",
+    "name": "Mankon Fon's Palace and Museum (Mankon)",
+    "category": "culture",
+    "tags": [
+      "museum",
+      "history",
+      "palace",
+      "courtyard",
+      "culture"
+    ],
+    "location": "Mankon",
+    "address": "Mankon Palace Road, Mankon",
+    "description": "A peaceful historical site with shady courtyards and traditional royal art where visitors can enjoy a quiet cultural walk.",
+    "highlights": [
+      "Royal art and artifacts",
+      "Shady courtyards",
+      "Guided cultural tours"
+    ],
+    "lat": 6.002,
+    "lon": 10.147,
+    "image": "/mankon-palace-view.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d14",
+    "name": "Up Station Area",
+    "category": "relaxation",
+    "tags": [
+      "viewpoint",
+      "scenic",
+      "relaxation",
+      "cool weather",
+      "walks"
+    ],
+    "location": "Up Station Area",
+    "address": "Up Station Road, Up Station",
+    "description": "Known for elevated scenic views of the city, cool weather, and quiet spots to unwind away from the crowded downtown.",
+    "highlights": [
+      "Scenic overlooks",
+      "Cooler microclimate",
+      "Peaceful walking spots"
+    ],
+    "lat": 5.9605,
+    "lon": 10.16,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bamenda%20from%20mountain%20road.jpg?width=480",
+    "imageCredit": "Wikimedia Commons contributor (CC BY-SA 3.0)",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Bamenda_from_mountain_road.jpg"
+  },
+  {
+    "id": "d16",
+    "name": "Royal Garden Restaurant",
+    "category": "food",
+    "tags": [
+      "restaurant",
+      "garden",
+      "family",
+      "local cuisine"
+    ],
+    "location": "Mile 4 Road, Bamenda",
+    "address": "Royal Garden Restaurant, Mile 4 Road, Bamenda",
+    "description": "A popular spot known for generous portions of regional dishes, a relaxed garden setting, and friendly service.",
+    "highlights": [
+      "Outdoor garden seating",
+      "Family-friendly",
+      "Local specialties"
+    ],
+    "lat": 5.9622,
+    "lon": 10.1598
+  },
+  {
+    "id": "d18",
+    "name": "Momo's Grill & Bar",
+    "category": "food",
+    "tags": [
+      "grill",
+      "bar",
+      "casual",
+      "local food"
+    ],
+    "location": "SONAC Street, Bamenda",
+    "address": "Momo's Grill & Bar, SONAC Street, Bamenda",
+    "description": "A casual grill and bar serving grilled meats, local sides, and cold drinks\u2014popular with both locals and visitors.",
+    "highlights": [
+      "Grilled specialties",
+      "Casual atmosphere",
+      "Evening live music"
+    ],
+    "lat": 5.961,
+    "lon": 10.159
+  },
+  {
+    "id": "d24",
+    "name": "Bamenda Museum of History",
+    "category": "culture",
+    "tags": [
+      "museum",
+      "history",
+      "arts",
+      "culture"
+    ],
+    "location": "Old town, Bamenda",
+    "address": "Bamenda Museum of History, Old Town, Bamenda",
+    "description": "A compact museum showcasing the history, traditions, and cultural identity of the Bamenda region.",
+    "highlights": [
+      "Local history",
+      "Artifacts",
+      "Guided tours"
+    ],
+    "lat": 5.956,
+    "lon": 10.1555
+  },
+  {
+    "id": "d27",
+    "name": "Mezam Divisional Delegation (Governor's Office)",
+    "category": "administrative",
+    "tags": [
+      "government",
+      "administrative",
+      "public service",
+      "office"
+    ],
+    "location": "Bamenda Central",
+    "address": "Government Quarter, Central Bamenda",
+    "description": "The regional administrative office for Mezam Division, handling official permits, civil documentation, and public administration.",
+    "highlights": [
+      "Civil documentation",
+      "Permits & authorizations",
+      "Public administration desk"
+    ],
+    "lat": 5.9605,
+    "lon": 10.154
+  },
+  {
+    "id": "d25",
+    "name": "Abi Resort",
+    "category": "relaxation",
+    "tags": [
+      "resort",
+      "relaxation",
+      "spa",
+      "garden",
+      "views"
+    ],
+    "location": "Up Station, Bamenda",
+    "address": "Abi Resort, Up Station, Bamenda",
+    "description": "A peaceful resort in the Up Station area with relaxing outdoor spaces and comfortable amenities for a calm getaway.",
+    "highlights": [
+      "Scenic setting",
+      "Comfortable stay",
+      "Quiet environment"
+    ],
+    "lat": 5.9608,
+    "lon": 10.159,
+    "image": "/abi-resort.jpg",
+    "imageCredit": "@abifallresort"
+  },
+  {
+    "id": "d31",
+    "name": "University of Bamenda Campus",
+    "category": "culture",
+    "tags": [
+      "university",
+      "campus",
+      "education",
+      "landmark"
+    ],
+    "location": "Bambili",
+    "address": "University of Bamenda, Bambili",
+    "description": "The main campus of the University of Bamenda (UBa), set on a hillside in Bambili with sports courts, lecture halls, and dormitories.",
+    "highlights": [
+      "Campus grounds",
+      "Sports courts",
+      "Student life"
+    ],
+    "lat": 5.991,
+    "lon": 10.262,
+    "image": "/university-of-bamenda-bambili.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d32",
+    "name": "Nkwen Fon's Palace",
+    "category": "culture",
+    "tags": [
+      "palace",
+      "history",
+      "culture",
+      "heritage",
+      "Nkwen"
+    ],
+    "location": "Mile 4, Nkwen",
+    "address": "Nkwen Fon's Palace, Mile 4, Nkwen",
+    "description": "The traditional palace of the Fon of Nkwen, an important cultural and administrative seat for the Nkwen people.",
+    "highlights": [
+      "Traditional palace",
+      "Cultural heritage",
+      "Local history"
+    ],
+    "lat": 5.9705,
+    "lon": 10.161,
+    "image": "/nkwen-fons-palace.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d33",
+    "name": "St Joseph's Cathedral",
+    "category": "culture",
+    "tags": [
+      "cathedral",
+      "church",
+      "religion",
+      "landmark"
+    ],
+    "location": "Mankon",
+    "address": "St Joseph's Cathedral, Mankon, outskirts of Bamenda",
+    "description": "A grand cathedral on the outskirts of Bamenda in Mankon, notable for its scale and stained-glass facade.",
+    "highlights": [
+      "Striking architecture",
+      "Stained glass facade",
+      "Services and events"
+    ],
+    "lat": 6.001,
+    "lon": 10.148,
+    "image": "/st-josephs-cathedral-mankon.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d34",
+    "name": "Ayaba Hotel",
+    "category": "relaxation",
+    "tags": [
+      "accommodation",
+      "hotel",
+      "rest"
+    ],
+    "location": "Old Town, Bamenda",
+    "address": "Ayaba Hotel, Old Town, Bamenda",
+    "description": "A long-standing hotel in Old Town Bamenda, set in landscaped palm-lined grounds.",
+    "highlights": [
+      "Landscaped grounds",
+      "Comfortable rooms",
+      "Central location"
+    ],
+    "lat": 5.956,
+    "lon": 10.1555,
+    "image": "/ayaba-hotel.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d35",
+    "name": "Hotel Azam",
+    "category": "relaxation",
+    "tags": [
+      "accommodation",
+      "hotel",
+      "rest"
+    ],
+    "location": "Bamenda",
+    "address": "Hotel Azam, Bamenda",
+    "description": "A hotel in Bamenda offering lodging in the city.",
+    "highlights": [
+      "Comfortable rooms",
+      "City location"
+    ],
+    "lat": 5.958,
+    "lon": 10.15,
+    "image": "/hotel-azam.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d36",
+    "name": "Sisia Waterfall",
+    "category": "nature",
+    "tags": [
+      "waterfall",
+      "hiking",
+      "nature",
+      "outdoors",
+      "Nkwen"
+    ],
+    "location": "Mile Nkwen",
+    "address": "Sisia Waterfall, Mile Nkwen",
+    "description": "A waterfall near Nkwen offering scenic hiking and nature photography outside the city centre.",
+    "highlights": [
+      "Waterfall",
+      "Hiking",
+      "Photography"
+    ],
+    "lat": 5.985,
+    "lon": 10.19,
+    "image": "/sisia-waterfall.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d37",
+    "name": "Mankon Stadium",
+    "category": "adventure",
+    "tags": [
+      "stadium",
+      "football",
+      "sports",
+      "events"
+    ],
+    "location": "Mankon",
+    "address": "Mankon Stadium, Mankon, Bamenda",
+    "description": "A community football stadium in Mankon that draws large crowds for local matches and events, set against the surrounding hills.",
+    "highlights": [
+      "Football matches",
+      "Community events",
+      "Scenic hillside setting"
+    ],
+    "lat": 6.001,
+    "lon": 10.145,
+    "image": "/mankon-stadium.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d38",
+    "name": "Blue Pearl Hotel",
+    "category": "relaxation",
+    "tags": [
+      "accommodation",
+      "hotel",
+      "rest"
+    ],
+    "location": "Mile 3, Nkwen",
+    "address": "Blue Pearl Hotel, S-Bend, Mile 3, Nkwen, Bamenda",
+    "description": "A hotel at Mile 3 Nkwen with a distinctive blue-glass facade, offering rooms for travelers staying in Bamenda.",
+    "highlights": [
+      "Comfortable rooms",
+      "Central Nkwen location"
+    ],
+    "lat": 5.97,
+    "lon": 10.163,
+    "image": "/blue-pearl-hotel.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d39",
+    "name": "Old Town Mosque",
+    "category": "culture",
+    "tags": [
+      "mosque",
+      "religion",
+      "landmark",
+      "architecture"
+    ],
+    "location": "Old Town",
+    "address": "Central Mosque, Old Town, Bamenda",
+    "description": "A striking mosque in Old Town with a blue-domed roof and twin minarets, visible across the surrounding rooftops.",
+    "highlights": [
+      "Distinctive blue dome",
+      "Twin minarets",
+      "Landmark architecture"
+    ],
+    "lat": 5.955,
+    "lon": 10.154,
+    "image": "/old-town-mosque.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d40",
+    "name": "Georges Corner",
+    "category": "food",
+    "tags": [
+      "restaurant",
+      "rooftop",
+      "views",
+      "dining"
+    ],
+    "location": "Up Station",
+    "address": "Georges Corner, Up Station, Bamenda",
+    "description": "A rooftop spot in Up Station with open-air seating and sweeping views over the city.",
+    "highlights": [
+      "Rooftop seating",
+      "City views",
+      "Relaxed atmosphere"
+    ],
+    "lat": 5.9605,
+    "lon": 10.1595,
+    "image": "/georges-corner.jpg",
+    "imageCredit": "Photo provided"
+  }
+]

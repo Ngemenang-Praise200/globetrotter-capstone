@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Illustrated Bamenda city view from Up Station">
+  <rect width="1200" height="700" fill="#f4efe7"/>
+  <rect y="480" width="1200" height="220" fill="#dfe8c8"/>
+  <rect y="420" width="1200" height="80" fill="#c9d8a7"/>
+  <rect x="80" y="330" width="140" height="120" fill="#8e6a42"/>
+  <rect x="240" y="260" width="110" height="190" fill="#6f553c"/>
+  <rect x="380" y="220" width="120" height="230" fill="#8f6b4c"/>
+  <rect x="530" y="180" width="150" height="270" fill="#7a573a"/>
+  <rect x="710" y="250" width="100" height="200" fill="#9a7754"/>
+  <rect x="840" y="210" width="180" height="240" fill="#75563b"/>
+  <rect x="1040" y="310" width="80" height="140" fill="#8d6b45"/>
+  <path d="M120 520 L300 520 L300 450 L260 430 L240 390 L220 430 L180 400 L150 450 L120 430 Z" fill="#5d7f3f"/>
+  <path d="M760 520 L940 520 L940 430 L900 390 L860 410 L830 370 L800 410 L760 390 Z" fill="#57813a"/>
+  <circle cx="880" cy="140" r="60" fill="#f9d77d" opacity="0.95"/>
+  <path d="M0 560 C180 510 320 500 430 540 C560 585 770 600 1200 555 L1200 700 L0 700 Z" fill="#b5c58d"/>
+  <path d="M0 620 C220 590 400 590 620 620 C780 640 960 650 1200 625" stroke="#8fa86b" stroke-width="12" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service places — GlobeTrotter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1 id="service-title">Bamenda services</h1>
+      <p id="service-description">Explore places and sites in Bamenda for the selected service.</p>
+      <a class="text-link" href="/">Back to home</a>
+    </header>
+
+    <main>
+      <section class="card">
+        <div id="service-results" class="list"></div>
+      </section>
+
+      <section class="card map-card">
+        <h2>Map of recommended places</h2>
+        <div id="map" class="map"></div>
+      </section>
+    </main>
+
+    <div id="place-modal" class="modal-overlay hidden">
+      <div class="modal-card">
+        <button type="button" id="place-modal-close" class="modal-close" aria-label="Close">×</button>
+        <div id="place-modal-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="service.js"></script>
+</body>
+</html>
