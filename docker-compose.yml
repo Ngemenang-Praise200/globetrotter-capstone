@@ -1,0 +1,87 @@
+services:
+  user-service:
+    build:
+      context: ./phase2
+      dockerfile: user_service/Dockerfile
+    environment:
+      - PORT=5001
+      - JWT_SECRET=${JWT_SECRET:-change-this-secret-before-production}
+      - ADMIN_EMAIL=${ADMIN_EMAIL:-admin@globetrotter.local}
+    volumes:
+      - ./phase2/user_service/data:/app/user_service/data   # keeps users.json outside the container so it survives rebuilds
+    ports:
+      - "5001:5001"
+
+  destination-service:
+    build:
+      context: ./phase2
+      dockerfile: destination_service/Dockerfile
+    environment:
+      - PORT=5002
+      - USER_SERVICE_URL=http://user-service:5001
+    volumes:
+      - ./phase2/destination_service/data:/app/destination_service/data
+    depends_on:
+      - user-service
+    ports:
+      - "5002:5002"
+
+  itinerary-service:
+    build:
+      context: ./phase2
+      dockerfile: itinerary_service/Dockerfile
+    environment:
+      - PORT=5003
+      - USER_SERVICE_URL=http://user-service:5001
+    volumes:
+      - ./phase2/itinerary_service/data:/app/itinerary_service/data
+    depends_on:
+      - user-service
+    ports:
+      - "5003:5003"
+
+  recommendation-service:
+    build:
+      context: ./phase2
+      dockerfile: recommendation_service/Dockerfile
+    environment:
+      - PORT=5004
+      - USER_SERVICE_URL=http://user-service:5001
+      - DESTINATION_SERVICE_URL=http://destination-service:5002
+    depends_on:
+      - user-service
+      - destination-service
+    ports:
+      - "5004:5004"
+
+  assistant-service:
+    build:
+      context: ./phase2
+      dockerfile: assistant_service/Dockerfile
+    environment:
+      - PORT=5005
+      - DESTINATION_SERVICE_URL=http://destination-service:5002
+    depends_on:
+      - destination-service
+    ports:
+      - "5005:5005"
+
+  gateway:
+    build:
+      context: .
+      dockerfile: phase2/gateway.Dockerfile
+    environment:
+      - PORT=5050
+      - USER_SERVICE_URL=http://user-service:5001
+      - DESTINATION_SERVICE_URL=http://destination-service:5002
+      - ITINERARY_SERVICE_URL=http://itinerary-service:5003
+      - RECOMMENDATION_SERVICE_URL=http://recommendation-service:5004
+      - ASSISTANT_SERVICE_URL=http://assistant-service:5005
+    depends_on:
+      - user-service
+      - destination-service
+      - itinerary-service
+      - recommendation-service
+      - assistant-service
+    ports:
+      - "5050:5050"

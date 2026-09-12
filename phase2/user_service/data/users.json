@@ -1,0 +1,81 @@
+[
+  {
+    "id": "1",
+    "name": "Ngemenang Praise",
+    "email": "praisengemenang@gmail.com",
+    "password": "$2b$12$pAiuhcaJmMzKmXJnpdMBVep2iu75.1YQJDS2ksd4RcKRBlBYdKdP6",
+    "interests": [
+      "culture"
+    ],
+    "createdAt": ""
+  },
+  {
+    "id": "2",
+    "name": "Hariette Sela",
+    "email": "praisezanche@gamil.com",
+    "password": "$2b$12$b3Hb8Qjpu2stEqBbnhiWnOG7OdN7JLW9Zoj6mhPn7IoFxcnV4H2wS",
+    "interests": [
+      "food"
+    ],
+    "createdAt": ""
+  },
+  {
+    "id": "jKEsK1vEE39s624D",
+    "name": "Akoh lloyd",
+    "email": "lloydakoh@gmail.com",
+    "password": "$2b$12$WC8dWldDd4s9VXlRGoqucukrppqrS1abUUiEJ9WaZU5AsRUYBO7EC",
+    "interests": [
+      "food"
+    ],
+    "createdAt": "2026-08-03T04:01:35.617643+00:00",
+    "isAdmin": false
+  },
+  {
+    "id": "mcERA5LATjlWUymW",
+    "name": "Praise",
+    "email": "ngemenangpraise@gmail.com",
+    "password": "$2b$12$ayXl34uAxULubX57/VSmK.zeCeNGRZkIdWMMgQvD0qrjnwzXWpnfu",
+    "interests": [
+      "administrative"
+    ],
+    "location": {
+      "lat": 5.976,
+      "lon": 10.165,
+      "area": "Nkwen",
+      "source": "registration",
+      "updatedAt": "2026-08-18T01:51:49.638721+00:00",
+      "visibleToAdmin": false
+    },
+    "createdAt": "2026-08-06T00:00:04.986904+00:00",
+    "isAdmin": false
+  },
+  {
+    "id": "vlhEPjrQosOhEqTd",
+    "name": "admin",
+    "email": "admin@globetrotter.local",
+    "password": "$2b$12$Zoje6K2WXxjfX7X//rPQIe..hCbQX.NrmNLJsAev9X99OlGjZTqNq",
+    "interests": [
+      "adventure"
+    ],
+    "location": {
+      "lat": 5.9588,
+      "lon": 10.1587,
+      "area": "Bamenda City Centre",
+      "updatedAt": "2026-08-06T00:13:47.204590+00:00",
+      "source": "registration"
+    },
+    "createdAt": "2026-08-06T00:13:47.794289+00:00",
+    "isAdmin": true
+  },
+  {
+    "id": "0yh9Nrlr7xD_FZIT",
+    "name": "Favour Zanchef",
+    "email": "favourzanche@gmail.com",
+    "password": "$2b$12$9Z2VGO4cC8TupWkFxDPqM.ztvQUx0jocu0Mraqr9pt0yd8qOMfxM.",
+    "interests": [
+      "food"
+    ],
+    "createdAt": "2026-08-16T02:15:16.851136+00:00",
+    "isAdmin": false
+  }
+]

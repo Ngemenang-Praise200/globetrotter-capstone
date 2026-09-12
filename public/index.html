@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlobeTrotter Bamenda &amp; Environs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="login-page">
+  <div class="app-shell">
+    <header>
+      <div class="header-bar">
+        <h1>GlobeTrotter</h1>
+        <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+      <p>Travel recommendations and itinerary planning for Bamenda and its environs, Cameroon.</p>
+    </header>
+
+    <div id="nav-drawer-backdrop" class="nav-drawer-backdrop hidden"></div>
+    <div id="nav-drawer" class="nav-drawer hidden">
+      <div class="nav-drawer-header">
+        <strong>Menu</strong>
+        <button type="button" id="nav-drawer-close" aria-label="Close menu">×</button>
+      </div>
+      <div class="nav-drawer-section">
+        <h3>Explore</h3>
+        <div id="drawer-services" class="nav-list"></div>
+      </div>
+      <div class="nav-drawer-section">
+        <h3>Plan</h3>
+        <a href="/auth.html?mode=login" class="nav-link">Trip Planner</a>
+        <a href="/service.html?service=administrative" class="nav-link">Emergency services</a>
+        <a href="/auth.html?mode=login" class="nav-link">Your dashboard</a>
+      </div>
+      <div class="nav-drawer-section">
+        <h3>Account</h3>
+        <a href="/auth.html?mode=login" class="nav-link">Sign in</a>
+        <a href="/auth.html?mode=register" class="nav-link">Create account</a>
+      </div>
+    </div>
+
+    <main>
+      <section id="landing-panel">
+        <div class="landing-hero">
+          <span class="tag">Travel • Discover • Plan</span>
+          <h2>Explore Bamenda and its environs before you sign in</h2>
+          <p>Browse real places across Bamenda and the surrounding area, see what GlobeTrotter can do for your trip, then create a free account or log in below to save an itinerary.</p>
+        </div>
+
+        <div class="showcase-grid">
+          <figure class="showcase-item showcase-item-large">
+            <img src="/bamenda-overview.jpg" alt="Overview of Bamenda from Up Station" />
+            <figcaption><strong>Bamenda</strong><span>Up Station</span></figcaption>
+          </figure>
+          <figure class="showcase-item">
+            <img src="/mankon-palace-view.jpg" alt="Mankon Fon's Palace" />
+            <figcaption><strong>Mankon Fon's Palace</strong><span>Mankon</span></figcaption>
+          </figure>
+          <figure class="showcase-item">
+            <img src="/st-josephs-cathedral-mankon.jpg" alt="St Joseph's Cathedral" />
+            <figcaption><strong>St Joseph's Cathedral</strong><span>Mankon</span></figcaption>
+          </figure>
+          <figure class="showcase-item">
+            <img src="/awing-waterfall.jpg" alt="Awing Waterfall" />
+            <figcaption><strong>Awing Waterfall</strong><span>Awing Village</span></figcaption>
+          </figure>
+          <figure class="showcase-item">
+            <img src="/university-of-bamenda-bambili.jpg" alt="University of Bamenda campus" />
+            <figcaption><strong>University of Bamenda</strong><span>Bambili</span></figcaption>
+          </figure>
+          <figure class="showcase-item">
+            <img src="/nkwen-fons-palace.jpg" alt="Nkwen Fon's Palace" />
+            <figcaption><strong>Nkwen Fon's Palace</strong><span>Mile 4, Nkwen</span></figcaption>
+          </figure>
+          <figure class="showcase-item">
+            <img src="/ayaba-hotel.jpg" alt="Ayaba Hotel" />
+            <figcaption><strong>Ayaba Hotel</strong><span>Old Town</span></figcaption>
+          </figure>
+          <figure class="showcase-item">
+            <img src="/abi-fall-resort-mbengwi.jpg" alt="Abi Fall Resort" />
+            <figcaption><strong>Abi Fall Resort</strong><span>Mbengwi</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="landing-nav-card">
+          <div class="landing-nav-brand">
+            <span class="brand-icon">🧭</span>
+            <div>
+              <strong>GlobeTrotter</strong>
+              <p>Your guide to getting around Bamenda and its environs — restaurants, hotels, culture, and transport, all in one place.</p>
+            </div>
+          </div>
+          <div class="landing-nav-share">
+            <button type="button" id="landing-share-button" aria-label="Share GlobeTrotter">🔗 Share</button>
+            <a href="mailto:?subject=Check%20out%20GlobeTrotter%20Bamenda&body=Take%20a%20look%3A%20https%3A%2F%2Fglobetrotter" aria-label="Email a friend">✉️ Email</a>
+          </div>
+          <div class="landing-nav-columns landing-nav-columns-single">
+            <div>
+              <h3>Plan</h3>
+              <a href="/auth.html?mode=login" class="nav-link">Trip Planner</a>
+              <a href="/service.html?service=administrative" class="nav-link">Emergency services</a>
+              <a href="/auth.html?mode=login" class="nav-link">Your dashboard</a>
+            </div>
+          </div>
+          <div class="landing-nav-account">
+            <h3>Account</h3>
+            <a href="/auth.html?mode=login" class="nav-link">Sign in</a>
+            <a href="/auth.html?mode=register" class="nav-link">Create account</a>
+          </div>
+          <p class="landing-nav-footer">Built for Bamenda. Places data is a curated starting set — verify hours and prices before you go.</p>
+        </div>
+      </section>
+
+      <section id="dashboard" class="hidden">
+        <div class="toolbar">
+          <div>
+            <strong id="welcome-text"></strong>
+            <span id="user-interests"></span>
+          </div>
+          <a id="admin-link" class="text-link hidden" href="/admin">Admin map</a>
+          <button id="logout-button">Logout</button>
+        </div>
+
+        <div class="card map-card hero-card">
+          <div class="section-heading">
+            <h2>Bamenda — find yourself on the map</h2>
+            <p>Your location shows automatically if you allow it. Use it to see nearby places, or share it with admins if you choose to.</p>
+          </div>
+          <div class="map-toolbar">
+            <button type="button" id="locate-me-button">📍 Find places near me</button>
+            <button type="button" id="stop-live-directions-button" class="hidden">Stop live directions</button>
+            <span id="locate-status" class="helper-text"></span>
+          </div>
+          <label class="consent-control"><input type="checkbox" id="share-location-consent" /> Share my current location with GlobeTrotter administrators. You can turn this off anytime.</label>
+
+          <form id="update-area-form" class="update-area-form">
+            <label>Your area
+              <input type="text" id="update-area-input" list="bamenda-areas-dashboard" placeholder="Choose your area" />
+              <datalist id="bamenda-areas-dashboard">
+                <option value="Bamenda City Centre"><option value="Commercial Avenue"><option value="Mankon"><option value="Nkwen"><option value="Up Station"><option value="Mile 2"><option value="Mile 3"><option value="Mile 4"><option value="Foncha Junction"><option value="New Road"><option value="Old Town"><option value="Ntarikon"><option value="Mendankwe"><option value="Bambui"><option value="Bambili">
+              </datalist>
+            </label>
+            <label class="consent-control"><input type="checkbox" id="update-area-consent" /> Let administrators see this area</label>
+            <button type="submit">Save area</button>
+            <span id="update-area-status" class="helper-text"></span>
+          </form>
+
+          <div id="map" class="map"></div>
+          <div id="nearby-results" class="list"></div>
+        </div>
+
+        <div class="card hidden">
+          <div class="section-heading">
+            <h2>What you can do</h2>
+            <p>Discover, plan, and manage your Bamenda travel itinerary from one dashboard.</p>
+          </div>
+          <ul class="feature-list">
+            <li>Browse curated services by category</li>
+            <li>Search destinations by name, tags, or category</li>
+            <li>Get personalized recommendations</li>
+            <li>Build and save itineraries with dates and notes</li>
+            <li>Review your trips in one place</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="section-heading">
+            <h2>Find a place on the map</h2>
+            <p>Type the name of any place — it doesn't have to already be in GlobeTrotter. We'll look it up, show a photo, an estimated food cost, and how to get there.</p>
+          </div>
+          <form id="place-lookup-form" class="search-inline">
+            <input type="text" id="place-lookup-query" placeholder="e.g. Small Soppo Market, or a restaurant name" />
+            <button type="submit">Find place</button>
+          </form>
+          <p id="place-lookup-status" class="helper-text" aria-live="polite"></p>
+          <div id="place-lookup-result"></div>
+        </div>
+
+        <div class="card">
+          <div class="section-heading">
+            <h2>Services available in Bamenda</h2>
+            <p>Choose a service to see its places, practical transport guidance, food prices, and directions.</p>
+          </div>
+          <div id="services" class="service-grid"></div>
+        </div>
+
+        <div class="grid hidden">
+          <div class="card">
+            <h2>Search Destinations</h2>
+            <form id="search-form">
+              <input type="text" id="search-query" placeholder="Search by name or tag" />
+              <select id="search-category">
+                <option value="">All categories</option>
+                <option value="culture">Culture</option>
+                <option value="nature">Nature</option>
+                <option value="relaxation">Relaxation</option>
+                <option value="food">Food</option>
+                <option value="adventure">Adventure</option>
+                <option value="administrative">Administrative</option>
+              </select>
+              <button type="submit">Search</button>
+            </form>
+            <div id="search-results" class="list"></div>
+          </div>
+
+          <div class="card">
+            <h2>Recommendations</h2>
+            <div class="recommendation-actions">
+              <button data-interest="adventure">Adventure</button>
+              <button data-interest="culture">Culture</button>
+              <button data-interest="relaxation">Relaxation</button>
+              <button data-interest="food">Food</button>
+              <button data-interest="administrative">Administrative</button>
+            </div>
+            <div id="recommendations" class="list"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>My Favorites</h2>
+          <div id="favorites-list" class="list"></div>
+        </div>
+
+        <div class="card">
+          <h2>My Travel Itineraries</h2>
+          <button id="new-itinerary-button">Create New Itinerary</button>
+          <div id="itineraries" class="list"></div>
+        </div>
+
+      </section>
+
+      <section id="itinerary-form-panel" class="card hidden">
+        <h2>Create or Update Itinerary</h2>
+        <form id="itinerary-form">
+          <label>Title<input type="text" id="itinerary-title" required /></label>
+          <label>Selected destinations<input type="text" id="itinerary-destination-ids" placeholder="e.g. d1,d5" readonly /></label>
+          <div id="itinerary-selection" class="selection-list"></div>
+          <p class="helper-text">Pick stops from the search results and recommendations to build a custom itinerary.</p>
+          <label>Start date<input type="date" id="itinerary-start" /></label>
+          <label>End date<input type="date" id="itinerary-end" /></label>
+          <label>Notes<textarea id="itinerary-notes"></textarea></label>
+          <div class="form-actions">
+            <button type="submit">Save</button>
+            <button type="button" id="share-itinerary-button">Share itinerary</button>
+            <button type="button" id="cancel-itinerary">Cancel</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="messages" class="notifications"></section>
+
+      <div id="place-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+          <button type="button" id="place-modal-close" class="modal-close" aria-label="Close">×</button>
+          <div id="place-modal-body"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js?v=16"></script>
+</body>
+</html>
