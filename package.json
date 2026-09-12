@@ -2,7 +2,7 @@
 "name": "globaltrotter",
   "version": "1.0.0",
   "description": "Monolithic travel recommendation application for Bamenda, Cameroon.",
-  "main": "server.js",
+  "main": "app.py",
   "scripts": {
     "start": "python app.py",
     "dev": "python app.py"
