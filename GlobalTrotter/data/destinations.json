@@ -1,0 +1,689 @@
+[
+  {
+    "id": "d1",
+    "name": "Bamenda Market",
+    "category": "culture",
+    "tags": [
+      "market",
+      "shopping",
+      "local food",
+      "culture"
+    ],
+    "location": "Central Bamenda",
+    "address": "Central Market Road, Central Bamenda",
+    "description": "A lively market where visitors can buy local goods, try street food, and experience Bamenda daily life.",
+    "highlights": [
+      "Traditional crafts",
+      "Fresh produce",
+      "Food stalls"
+    ],
+    "lat": 5.9588,
+    "lon": 10.1587,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Food%20market%202.jpg?width=480",
+    "imageCredit": "AminouT, Wikimedia Commons (CC BY-SA)",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Food_market_2.jpg"
+  },
+  {
+    "id": "d2",
+    "name": "Mankon Square",
+    "category": "culture",
+    "tags": [
+      "history",
+      "monument",
+      "arts",
+      "heritage"
+    ],
+    "location": "Mankon",
+    "address": "Mankon Square, Mankon",
+    "description": "A historical square hosting cultural festivals, local art exhibitions, and community events.",
+    "highlights": [
+      "Cultural events",
+      "Public art",
+      "Heritage site"
+    ],
+    "lat": 5.9995,
+    "lon": 10.1478,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mankon%20Palace%20(4).JPG?width=480",
+    "imageCredit": "Bdx, Wikimedia Commons (CC BY-SA 4.0)",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Mankon_Palace_(4).JPG",
+    "imageLabel": "Photo of nearby Mankon Palace, Mankon \u2014 not this exact square"
+  },
+  {
+    "id": "d3",
+    "name": "Awing Waterfall",
+    "category": "nature",
+    "tags": [
+      "waterfall",
+      "hiking",
+      "nature",
+      "outdoors"
+    ],
+    "location": "Awing Village",
+    "address": "Awing Village Road, near Awing Waterfall",
+    "description": "A beautiful waterfall outside Bamenda offering scenic trails, a refreshing pool, and a peaceful atmosphere.",
+    "highlights": [
+      "Hiking trails",
+      "Swimming",
+      "Nature photography"
+    ],
+    "lat": 6.014,
+    "lon": 10.116,
+    "image": "/awing-waterfall.jpg",
+    "imageCredit": "@bamendauptodate"
+  },
+  {
+    "id": "d3a",
+    "name": "Abi Fall Looked",
+    "category": "nature",
+    "tags": [
+      "waterfall",
+      "hiking",
+      "nature",
+      "Mbengwi"
+    ],
+    "location": "Mbengwi",
+    "address": "Abi Fall Looked, Mbengwi",
+    "description": "A breathtaking waterfall near Mbengwi known locally as Abi Fall Looked, perfect for hiking, nature walks, and waterfall photography.",
+    "image": "/abi-fall-looked.jpg",
+    "highlights": [
+      "Waterfall",
+      "Hiking",
+      "Photography"
+    ],
+    "lat": 6.21,
+    "lon": 10.066
+  },
+  {
+    "id": "d4",
+    "name": "Mbunje Park",
+    "category": "relaxation",
+    "tags": [
+      "park",
+      "relaxation",
+      "picnic",
+      "family"
+    ],
+    "location": "Mile 4 area, Bamenda",
+    "address": "Mbunje Park, Mile 4 area, Bamenda",
+    "description": "A green public park ideal for relaxing strolls, picnics, and family time in the city.",
+    "highlights": [
+      "Open lawns",
+      "Play area",
+      "Quiet gardens"
+    ],
+    "lat": 5.9622,
+    "lon": 10.1605
+  },
+  {
+    "id": "d5",
+    "name": "Ndop Culinary House",
+    "category": "food",
+    "tags": [
+      "restaurant",
+      "local cuisine",
+      "dining",
+      "food"
+    ],
+    "location": "Bamenda Central",
+    "address": "No. 7, Bamenda Central Road, Central Bamenda",
+    "description": "A restaurant known for traditional Cameroonian dishes and regional specialties from the Northwest.",
+    "highlights": [
+      "Traditional meals",
+      "Friendly service",
+      "Local recipes"
+    ],
+    "lat": 5.9585,
+    "lon": 10.1592
+  },
+  {
+    "id": "d6",
+    "name": "Bamenda Hilltop Viewpoint",
+    "category": "adventure",
+    "tags": [
+      "viewpoint",
+      "hiking",
+      "sunset",
+      "adventure"
+    ],
+    "location": "Bamenda Hills",
+    "address": "Bamenda Hilltop Viewpoint, Bamenda Hills",
+    "description": "A scenic viewpoint reachable by foot or vehicle, offering panoramic views of Bamenda and surrounding hills.",
+    "highlights": [
+      "Sunset views",
+      "Photography",
+      "Outdoor adventure"
+    ],
+    "lat": 5.968,
+    "lon": 10.15,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bamenda%20from%20mountain%20road.jpg?width=480",
+    "imageCredit": "Wikimedia Commons contributor (CC BY-SA 3.0)",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Bamenda_from_mountain_road.jpg"
+  },
+  {
+    "id": "d7",
+    "name": "Muentuh Village",
+    "category": "culture",
+    "tags": [
+      "village",
+      "culture",
+      "traditional life",
+      "crafts"
+    ],
+    "location": "North of Bamenda",
+    "address": "Muentuh Village, North of Bamenda",
+    "description": "A traditional village where travelers can experience local customs, dance, and village life.",
+    "highlights": [
+      "Traditional dance",
+      "Village tour",
+      "Handicrafts"
+    ],
+    "lat": 6.02,
+    "lon": 10.17
+  },
+  {
+    "id": "d8",
+    "name": "Bamenda International Hotel",
+    "category": "relaxation",
+    "tags": [
+      "accommodation",
+      "hotel",
+      "wellness",
+      "rest"
+    ],
+    "location": "Bamenda Central",
+    "address": "Bamenda International Hotel, Commercial Avenue",
+    "description": "A comfortable hotel offering restful lodging, meeting facilities, and relaxation services.",
+    "highlights": [
+      "Comfortable rooms",
+      "Pool",
+      "Meeting spaces"
+    ],
+    "lat": 5.958,
+    "lon": 10.1575
+  },
+  {
+    "id": "d9",
+    "name": "Mount Oku Trail",
+    "category": "adventure",
+    "tags": [
+      "trekking",
+      "mountain",
+      "nature",
+      "adventure"
+    ],
+    "location": "Mount Oku region",
+    "address": "Mount Oku Trailhead, Oku Region",
+    "description": "A day trip destination for hikers who want to explore higher elevation trails and scenic peaks.",
+    "highlights": [
+      "Mountain trekking",
+      "Scenic views",
+      "Wildlife spotting"
+    ],
+    "lat": 6.21,
+    "lon": 10.52,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Oku%20Cameroon.jpg?width=480",
+    "imageCredit": "Wikimedia Commons contributor (CC BY-SA)",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Lake_Oku_Cameroon.jpg"
+  },
+  {
+    "id": "d10",
+    "name": "Bamenda Coffee Caf\u00e9",
+    "category": "food",
+    "tags": [
+      "cafe",
+      "coffee",
+      "relaxation",
+      "food"
+    ],
+    "location": "SONAC Street, Bamenda",
+    "address": "Bamenda Coffee Caf\u00e9, SONAC Street, Bamenda",
+    "description": "A cozy caf\u00e9 serving local coffee, pastries, and light meals with a relaxed atmosphere.",
+    "highlights": [
+      "Local coffee",
+      "Casual seating",
+      "Snacks"
+    ],
+    "lat": 5.9583,
+    "lon": 10.1589
+  },
+  {
+    "id": "d11",
+    "name": "PresCaf\u00e9 (Commercial Avenue)",
+    "category": "food",
+    "tags": [
+      "cafe",
+      "coffee",
+      "pastries",
+      "handicrafts",
+      "relaxation"
+    ],
+    "location": "Near City Chemist, Commercial Avenue",
+    "address": "PresCaf\u00e9, near City Chemist, Commercial Avenue",
+    "description": "A quiet, calm caf\u00e9 with a Swiss-inspired design serving light meals, pastries, and coffee alongside a local handicraft shop.",
+    "highlights": [
+      "Swiss-inspired interior",
+      "Light meals & pastries",
+      "On-site handicraft shop"
+    ],
+    "lat": 5.9585,
+    "lon": 10.1625
+  },
+  {
+    "id": "d12",
+    "name": "A&A Rooftop Lounge (Commercial Avenue)",
+    "category": "relaxation",
+    "tags": [
+      "rooftop",
+      "lounge",
+      "wine-bar",
+      "views",
+      "relaxation"
+    ],
+    "location": "SGBC Building, Commercial Avenue",
+    "address": "SGBC Building, Commercial Avenue",
+    "description": "Located on the top floor of the SGBC building, this rooftop lounge offers great views and a relaxed wine-bar setting.",
+    "highlights": [
+      "Panoramic city views",
+      "Wine and small plates",
+      "Chill evening atmosphere"
+    ],
+    "lat": 5.9587,
+    "lon": 10.1628
+  },
+  {
+    "id": "d13",
+    "name": "Mankon Fon's Palace and Museum (Mankon)",
+    "category": "culture",
+    "tags": [
+      "museum",
+      "history",
+      "palace",
+      "courtyard",
+      "culture"
+    ],
+    "location": "Mankon",
+    "address": "Mankon Palace Road, Mankon",
+    "description": "A peaceful historical site with shady courtyards and traditional royal art where visitors can enjoy a quiet cultural walk.",
+    "highlights": [
+      "Royal art and artifacts",
+      "Shady courtyards",
+      "Guided cultural tours"
+    ],
+    "lat": 6.002,
+    "lon": 10.147,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mankon%20Palace%20(4).JPG?width=480",
+    "imageCredit": "Bdx, Wikimedia Commons (CC BY-SA 4.0)",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Mankon_Palace_(4).JPG"
+  },
+  {
+    "id": "d14",
+    "name": "Up Station Area",
+    "category": "relaxation",
+    "tags": [
+      "viewpoint",
+      "scenic",
+      "relaxation",
+      "cool weather",
+      "walks"
+    ],
+    "location": "Up Station Area",
+    "address": "Up Station Road, Up Station",
+    "description": "Known for elevated scenic views of the city, cool weather, and quiet spots to unwind away from the crowded downtown.",
+    "highlights": [
+      "Scenic overlooks",
+      "Cooler microclimate",
+      "Peaceful walking spots"
+    ],
+    "lat": 5.9605,
+    "lon": 10.16,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bamenda%20from%20mountain%20road.jpg?width=480",
+    "imageCredit": "Wikimedia Commons contributor (CC BY-SA 3.0)",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Bamenda_from_mountain_road.jpg"
+  },
+  {
+    "id": "d15",
+    "name": "Le Panorama Restaurant",
+    "category": "food",
+    "tags": [
+      "restaurant",
+      "fine dining",
+      "views",
+      "local cuisine"
+    ],
+    "location": "Near City Chemist, Bamenda",
+    "address": "Le Panorama Restaurant, near City Chemist, Bamenda",
+    "description": "A fine-dining restaurant offering elevated Cameroonian and international dishes with great city views.",
+    "highlights": [
+      "Fine dining",
+      "Scenic views",
+      "Seasonal menu"
+    ],
+    "lat": 5.958,
+    "lon": 10.1605
+  },
+  {
+    "id": "d16",
+    "name": "Royal Garden Restaurant",
+    "category": "food",
+    "tags": [
+      "restaurant",
+      "garden",
+      "family",
+      "local cuisine"
+    ],
+    "location": "Mile 4 Road, Bamenda",
+    "address": "Royal Garden Restaurant, Mile 4 Road, Bamenda",
+    "description": "A popular spot known for generous portions of regional dishes, a relaxed garden setting, and friendly service.",
+    "highlights": [
+      "Outdoor garden seating",
+      "Family-friendly",
+      "Local specialties"
+    ],
+    "lat": 5.9622,
+    "lon": 10.1598
+  },
+  {
+    "id": "d17",
+    "name": "La Fayette Restaurant",
+    "category": "food",
+    "tags": [
+      "restaurant",
+      "continental",
+      "dining",
+      "quality"
+    ],
+    "location": "Commercial Avenue near City Chemist",
+    "address": "La Fayette Restaurant, Commercial Avenue near City Chemist",
+    "description": "A well-reviewed restaurant offering continental and Cameroonian dishes with a reputation for consistent quality.",
+    "highlights": [
+      "Consistent quality",
+      "Indoor dining",
+      "Friendly staff"
+    ],
+    "lat": 5.959,
+    "lon": 10.163
+  },
+  {
+    "id": "d18",
+    "name": "Momo's Grill & Bar",
+    "category": "food",
+    "tags": [
+      "grill",
+      "bar",
+      "casual",
+      "local food"
+    ],
+    "location": "SONAC Street, Bamenda",
+    "address": "Momo's Grill & Bar, SONAC Street, Bamenda",
+    "description": "A casual grill and bar serving grilled meats, local sides, and cold drinks\u2014popular with both locals and visitors.",
+    "highlights": [
+      "Grilled specialties",
+      "Casual atmosphere",
+      "Evening live music"
+    ],
+    "lat": 5.961,
+    "lon": 10.159
+  },
+  {
+    "id": "d19",
+    "name": "Bamenda City Centre Food Court",
+    "category": "food",
+    "tags": [
+      "food court",
+      "street food",
+      "casual",
+      "local food"
+    ],
+    "location": "City Centre, Bamenda",
+    "address": "City Centre Food Court, City Centre, Bamenda",
+    "description": "A collection of fast-food and local snack stalls with quick meals and a lively urban feel.",
+    "highlights": [
+      "Street food",
+      "Quick bites",
+      "Busy evening scene"
+    ],
+    "lat": 5.9589,
+    "lon": 10.1595,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20treet%20in%20Bamenda%20Cameroon.jpg?width=480",
+    "imageCredit": "Wikimedia Commons contributor (CC BY-SA)",
+    "imageSource": "https://commons.wikimedia.org/wiki/Category:Street_vendors_in_Cameroon",
+    "imageLabel": "A Bamenda street scene shown as an example \u2014 not a photo of this exact food court"
+  },
+  {
+    "id": "d20",
+    "name": "Nkwen Cultural Centre",
+    "category": "culture",
+    "tags": [
+      "culture",
+      "events",
+      "community",
+      "heritage"
+    ],
+    "location": "Nkwen, Bamenda",
+    "address": "Nkwen Cultural Centre, Nkwen, Bamenda",
+    "description": "A community cultural centre that hosts traditional performances, exhibitions, and local events.",
+    "highlights": [
+      "Cultural shows",
+      "Community arts",
+      "Local heritage"
+    ],
+    "lat": 5.976,
+    "lon": 10.165
+  },
+  {
+    "id": "d21",
+    "name": "Bambui Hills Lookout",
+    "category": "adventure",
+    "tags": [
+      "lookout",
+      "hiking",
+      "viewpoint",
+      "adventure"
+    ],
+    "location": "Bambui, Bamenda",
+    "address": "Bambui Hills Lookout, Bambui, Bamenda",
+    "description": "A scenic hill lookout perfect for short hikes, photography, and village views.",
+    "highlights": [
+      "Panoramic views",
+      "Short hike",
+      "Photography"
+    ],
+    "lat": 5.99,
+    "lon": 10.17
+  },
+  {
+    "id": "d22",
+    "name": "Bambui Garden Lounge",
+    "category": "relaxation",
+    "tags": [
+      "garden",
+      "lounge",
+      "coffee",
+      "relaxation"
+    ],
+    "location": "Bambui, Bamenda",
+    "address": "Bambui Garden Lounge, Bambui, Bamenda",
+    "description": "A quiet garden lounge with comfortable seating, coffee, and a relaxed setting for evening downtime.",
+    "highlights": [
+      "Garden seating",
+      "Coffee",
+      "Easygoing atmosphere"
+    ],
+    "lat": 5.989,
+    "lon": 10.168
+  },
+  {
+    "id": "d23",
+    "name": "Bameda Waterfall Trail",
+    "category": "nature",
+    "tags": [
+      "waterfall",
+      "trail",
+      "nature",
+      "outdoors"
+    ],
+    "location": "Bafut Road, Bamenda",
+    "address": "Bameda Waterfall Trail, Bafut Road, Bamenda",
+    "description": "A nature trail with forest scenery, a small waterfall, and shaded walking paths.",
+    "highlights": [
+      "Forest trail",
+      "Waterfall view",
+      "Nature walk"
+    ],
+    "lat": 6.005,
+    "lon": 10.11,
+    "image": "/bameda-waterfall-trail.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d24",
+    "name": "Bamenda Museum of History",
+    "category": "culture",
+    "tags": [
+      "museum",
+      "history",
+      "arts",
+      "culture"
+    ],
+    "location": "Old town, Bamenda",
+    "address": "Bamenda Museum of History, Old Town, Bamenda",
+    "description": "A compact museum showcasing the history, traditions, and cultural identity of the Bamenda region.",
+    "highlights": [
+      "Local history",
+      "Artifacts",
+      "Guided tours"
+    ],
+    "lat": 5.956,
+    "lon": 10.1555
+  },
+  {
+    "id": "d26",
+    "name": "Bamenda Central Police Station",
+    "category": "administrative",
+    "tags": [
+      "police",
+      "safety",
+      "administrative",
+      "government",
+      "emergency"
+    ],
+    "location": "Bamenda Central",
+    "address": "Commercial Avenue, Central Bamenda",
+    "description": "The main police station serving Central Bamenda, handling reports, emergencies, and public safety matters.",
+    "highlights": [
+      "Emergency reporting",
+      "Community policing desk",
+      "Lost & found"
+    ],
+    "lat": 5.9592,
+    "lon": 10.156
+  },
+  {
+    "id": "d27",
+    "name": "Mezam Divisional Delegation (Governor's Office)",
+    "category": "administrative",
+    "tags": [
+      "government",
+      "administrative",
+      "public service",
+      "office"
+    ],
+    "location": "Bamenda Central",
+    "address": "Government Quarter, Central Bamenda",
+    "description": "The regional administrative office for Mezam Division, handling official permits, civil documentation, and public administration.",
+    "highlights": [
+      "Civil documentation",
+      "Permits & authorizations",
+      "Public administration desk"
+    ],
+    "lat": 5.9605,
+    "lon": 10.154
+  },
+  {
+    "id": "d28",
+    "name": "Bamenda City Council",
+    "category": "administrative",
+    "tags": [
+      "government",
+      "administrative",
+      "public service",
+      "council"
+    ],
+    "location": "Bamenda Central",
+    "address": "City Council Road, Central Bamenda",
+    "description": "The municipal council office responsible for local administration, business licensing, and city services.",
+    "highlights": [
+      "Business licensing",
+      "Local administration",
+      "Civil records"
+    ],
+    "lat": 5.9578,
+    "lon": 10.1568
+  },
+  {
+    "id": "d29",
+    "name": "Bamenda Fire and Rescue Service",
+    "category": "administrative",
+    "tags": [
+      "fire service",
+      "emergency",
+      "safety",
+      "administrative"
+    ],
+    "location": "Bamenda Central",
+    "address": "Fire Station Road, Central Bamenda",
+    "description": "The regional fire and rescue station, responding to fire emergencies and public safety incidents.",
+    "highlights": [
+      "Emergency response",
+      "Fire safety guidance",
+      "Rescue services"
+    ],
+    "lat": 5.9598,
+    "lon": 10.1572
+  },
+  {
+    "id": "d30",
+    "name": "Bamenda Immigration Office",
+    "category": "administrative",
+    "tags": [
+      "government",
+      "immigration",
+      "documentation",
+      "administrative"
+    ],
+    "location": "Bamenda Central",
+    "address": "Immigration Office, Commercial Avenue, Central Bamenda",
+    "description": "The regional immigration office handling passports, visas, and residency documentation.",
+    "highlights": [
+      "Passport services",
+      "Residency documentation",
+      "Travel permits"
+    ],
+    "lat": 5.9583,
+    "lon": 10.1618
+  },
+  {
+    "id": "d25",
+    "name": "Abi Resort",
+    "category": "relaxation",
+    "tags": [
+      "resort",
+      "relaxation",
+      "spa",
+      "garden",
+      "views"
+    ],
+    "location": "Up Station, Bamenda",
+    "address": "Abi Resort, Up Station, Bamenda",
+    "description": "A peaceful resort in the Up Station area with relaxing outdoor spaces and comfortable amenities for a calm getaway.",
+    "highlights": [
+      "Scenic setting",
+      "Comfortable stay",
+      "Quiet environment"
+    ],
+    "lat": 5.9608,
+    "lon": 10.159,
+    "image": "/abi-resort.jpg",
+    "imageCredit": "@abifallresort"
+  }
+]

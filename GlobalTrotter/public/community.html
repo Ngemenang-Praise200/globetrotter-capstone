@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community — GlobeTrotter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>Community</h1>
+      <p>Find other travelers, chat, form a group, and plan a trip together.</p>
+      <a class="text-link" href="/">Back to home</a>
+    </header>
+
+    <main>
+      <div id="community-signed-out" class="card hidden">
+        <p>You need an account to use Community.</p>
+        <a href="/auth.html?mode=login" class="small-button">Log in</a>
+        <a href="/auth.html?mode=register" class="small-button small-button-outline">Create account</a>
+      </div>
+
+      <div id="community-app" class="hidden">
+        <div class="community-tabs">
+          <button type="button" class="community-tab active" data-tab="chats">Chats</button>
+          <button type="button" class="community-tab" data-tab="people">People</button>
+          <button type="button" class="community-tab" data-tab="profile">My Profile</button>
+        </div>
+
+        <section id="tab-chats" class="card community-panel">
+          <div class="section-heading">
+            <h2>Your conversations</h2>
+            <p>Direct messages and groups you're part of.</p>
+          </div>
+          <button type="button" id="new-group-button">Create a group</button>
+          <div id="conversations-list" class="list"></div>
+
+          <div id="thread-view" class="hidden">
+            <div class="thread-header">
+              <strong id="thread-title"></strong>
+              <div id="thread-group-actions" class="hidden">
+                <button type="button" id="add-member-button">Add member</button>
+                <button type="button" id="plan-trip-button">Plan a trip together</button>
+                <button type="button" id="leave-group-button" class="secondary-button">Leave group</button>
+              </div>
+            </div>
+            <div id="messages-list" class="messages-list"></div>
+            <form id="message-form" class="message-form">
+              <input type="text" id="message-input" placeholder="Write a message…" autocomplete="off" />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </section>
+
+        <section id="tab-people" class="card community-panel hidden">
+          <div class="section-heading">
+            <h2>People on GlobeTrotter</h2>
+            <p>Other travelers who've created an account.</p>
+          </div>
+          <div id="people-list" class="list"></div>
+        </section>
+
+        <section id="tab-profile" class="card community-panel hidden">
+          <div class="section-heading">
+            <h2>My Profile</h2>
+            <p>This is what other travelers see about you in Community.</p>
+          </div>
+          <form id="profile-form" class="update-area-form profile-form">
+            <label>Photo URL<input type="text" id="profile-photo" placeholder="https://…" /></label>
+            <label>Phone number<input type="text" id="profile-phone" placeholder="+237…" /></label>
+            <label>City<input type="text" id="profile-city" placeholder="Bamenda" /></label>
+            <label>Area in the city<input type="text" id="profile-area" placeholder="Mile 4, Nkwen" /></label>
+            <label>What you do<input type="text" id="profile-occupation" placeholder="Student, teacher, trader…" /></label>
+            <button type="submit">Save profile</button>
+            <span id="profile-status" class="helper-text"></span>
+          </form>
+        </section>
+      </div>
+
+      <div id="new-group-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+          <button type="button" id="new-group-close" class="modal-close" aria-label="Close">×</button>
+          <h2>Create a group</h2>
+          <form id="new-group-form">
+            <label>Group name<input type="text" id="new-group-name" required /></label>
+            <div id="new-group-members" class="nav-list"></div>
+            <button type="submit">Create group</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="community.js"></script>
+</body>
+</html>
