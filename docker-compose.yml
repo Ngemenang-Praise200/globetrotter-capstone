@@ -66,6 +66,20 @@ services:
     ports:
       - "5005:5005"
 
+  chat-service:
+    build:
+      context: ./phase2
+      dockerfile: chat_service/Dockerfile
+    environment:
+      - PORT=5006
+      - USER_SERVICE_URL=http://user-service:5001
+    volumes:
+      - ./phase2/chat_service/data:/app/chat_service/data
+    depends_on:
+      - user-service
+    ports:
+      - "5006:5006"
+
   gateway:
     build:
       context: .
@@ -77,11 +91,13 @@ services:
       - ITINERARY_SERVICE_URL=http://itinerary-service:5003
       - RECOMMENDATION_SERVICE_URL=http://recommendation-service:5004
       - ASSISTANT_SERVICE_URL=http://assistant-service:5005
+      - CHAT_SERVICE_URL=http://chat-service:5006
     depends_on:
       - user-service
       - destination-service
       - itinerary-service
       - recommendation-service
       - assistant-service
+      - chat-service
     ports:
       - "5050:5050"

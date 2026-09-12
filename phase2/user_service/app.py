@@ -19,14 +19,21 @@ def write_users(users):
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True); DATA_FILE.write_text(json.dumps(users, indent=2), encoding="utf-8")
 def now(): return datetime.now(timezone.utc).isoformat()
 def is_admin(user): return bool(user.get("isAdmin")) or user.get("email", "").lower() == ADMIN_EMAIL
-def public(user):
+def public(user, include_email=False):
     # "area" is the user's own account data, returned only to themselves via
     # authenticated /me-style endpoints — always available for the app's own
     # map/personalization use. "sharesLocation" is a *separate* concern: it
     # only reflects whether an admin is allowed to see it (visibleToAdmin).
     location = user.get("location") or {}
     area = {"name": location.get("area"), "lat": location.get("lat"), "lon": location.get("lon")} if location.get("area") else None
-    return {"id": user.get("id"), "name": user.get("name"), "email": user.get("email"), "interests": user.get("interests", []), "createdAt": user.get("createdAt"), "isAdmin": is_admin(user), "sharesLocation": bool(location.get("visibleToAdmin")), "area": area, "favorites": user.get("favorites", [])}
+    profile = user.get("profile") or {}
+    result = {"id": user.get("id"), "name": user.get("name"), "interests": user.get("interests", []), "createdAt": user.get("createdAt"), "isAdmin": is_admin(user), "sharesLocation": bool(location.get("visibleToAdmin")), "area": area, "favorites": user.get("favorites", []),
+              "profile": {"photo": profile.get("photo"), "phone": profile.get("phone"), "city": profile.get("city"), "area": profile.get("area"), "occupation": profile.get("occupation")}}
+    # Email is private — only included when a user is looking at their own
+    # account (/me, /auth/verify, register/login), never in the public
+    # directory or when someone looks up another user by id.
+    if include_email: result["email"] = user.get("email")
+    return result
 def token_for(user): return jwt.encode({"id": user["id"]}, JWT_SECRET, algorithm="HS256")
 def current_user():
     token = request.headers.get("Authorization", "").removeprefix("Bearer ").strip()
@@ -54,25 +61,49 @@ def register():
     point = AREAS.get(area.lower())
     if point:
         user["location"] = {"lat": point[0], "lon": point[1], "area": area, "source": "registration", "updatedAt": now(), "visibleToAdmin": body.get("shareLocation") is True}
-    users.append(user); write_users(users); return jsonify({"token": token_for(user), "user": public(user)}), 201
+    users.append(user); write_users(users); return jsonify({"token": token_for(user), "user": public(user, include_email=True)}), 201
 
 @app.post("/auth/login")
 def login():
     body = request.get_json(silent=True) or {}; email = str(body.get("email", "")).strip().lower(); password = str(body.get("password", "")); user = next((u for u in read_users() if u.get("email", "").lower() == email), None)
     if not user or not bcrypt.checkpw(password.encode(), user.get("password", "").encode()): return jsonify({"error": "Incorrect email or password."}), 401
-    return jsonify({"token": token_for(user), "user": public(user)})
+    return jsonify({"token": token_for(user), "user": public(user, include_email=True)})
 
 @app.get("/auth/verify")
 def verify():
     user = current_user()
-    return (jsonify({"user": public(user)}), 200) if user else (jsonify({"error": "Invalid session."}), 401)
+    return (jsonify({"user": public(user, include_email=True)}), 200) if user else (jsonify({"error": "Invalid session."}), 401)
+@app.post("/me/profile")
+def update_profile():
+    user = current_user()
+    if not user: return jsonify({"error": "Please sign in to continue."}), 401
+    body = request.get_json(silent=True) or {}
+    users = read_users(); stored = next(u for u in users if u.get("id") == user["id"])
+    profile = stored.setdefault("profile", {})
+    for field in ("photo", "phone", "city", "area", "occupation"):
+        if field in body:
+            value = str(body[field]).strip()
+            profile[field] = value or None
+    profile["updatedAt"] = now()
+    write_users(users)
+    return jsonify(public(stored, include_email=True))
+
+@app.get("/users")
+def list_users():
+    # The community directory — every account holder can see every other
+    # account holder's public profile (not their email). Signing in is
+    # required so this isn't an open, unauthenticated user list.
+    user = current_user()
+    if not user: return jsonify({"error": "Please sign in to continue."}), 401
+    return jsonify([public(u) for u in read_users() if u.get("id") != user["id"]])
+
 @app.get("/users/<user_id>")
 def get_user(user_id):
     user = next((u for u in read_users() if u.get("id") == user_id), None)
     return (jsonify(public(user)), 200) if user else (jsonify({"error": "User not found."}), 404)
 @app.get("/me")
 def me():
-    user = current_user(); return (jsonify(public(user)), 200) if user else (jsonify({"error": "Please sign in to continue."}), 401)
+    user = current_user(); return (jsonify(public(user, include_email=True)), 200) if user else (jsonify({"error": "Please sign in to continue."}), 401)
 
 @app.post("/me/area")
 def update_area():
@@ -85,7 +116,7 @@ def update_area():
     users = read_users(); stored = next(u for u in users if u.get("id") == user["id"])
     stored["location"] = {"lat": point[0], "lon": point[1], "area": area, "source": "registration", "updatedAt": now(), "visibleToAdmin": body.get("shareLocation") is True}
     write_users(users)
-    return jsonify(public(stored))
+    return jsonify(public(stored, include_email=True))
 
 @app.route("/me/location", methods=["POST", "DELETE"])
 def location():

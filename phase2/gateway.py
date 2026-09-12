@@ -5,8 +5,8 @@ import requests
 from flask import Flask, Response, jsonify, request, send_from_directory
 
 ROOT = Path(__file__).resolve().parent.parent; PUBLIC = ROOT / "public"; app = Flask(__name__, static_folder=str(PUBLIC), static_url_path="")
-SERVICES = {"user": os.environ.get("USER_SERVICE_URL", "http://localhost:5001"), "destination": os.environ.get("DESTINATION_SERVICE_URL", "http://localhost:5002"), "itinerary": os.environ.get("ITINERARY_SERVICE_URL", "http://localhost:5003"), "recommendation": os.environ.get("RECOMMENDATION_SERVICE_URL", "http://localhost:5004"), "assistant": os.environ.get("ASSISTANT_SERVICE_URL", "http://localhost:5005")}
-USER_PATHS = {"register": "/auth/register", "login": "/auth/login", "me": "/me", "me/location": "/me/location", "me/area": "/me/area", "admin/locations": "/admin/locations"}
+SERVICES = {"user": os.environ.get("USER_SERVICE_URL", "http://localhost:5001"), "destination": os.environ.get("DESTINATION_SERVICE_URL", "http://localhost:5002"), "itinerary": os.environ.get("ITINERARY_SERVICE_URL", "http://localhost:5003"), "recommendation": os.environ.get("RECOMMENDATION_SERVICE_URL", "http://localhost:5004"), "assistant": os.environ.get("ASSISTANT_SERVICE_URL", "http://localhost:5005"), "chat": os.environ.get("CHAT_SERVICE_URL", "http://localhost:5006")}
+USER_PATHS = {"register": "/auth/register", "login": "/auth/login", "me": "/me", "me/location": "/me/location", "me/area": "/me/area", "me/profile": "/me/profile", "users": "/users", "admin/locations": "/admin/locations"}
 DESTINATION_PATHS = {"destinations": "/destinations", "services": "/services", "nearby": "/nearby", "place-lookup": "/place-lookup"}
 def proxy(service, path):
     try:
@@ -16,8 +16,10 @@ def proxy(service, path):
 @app.route("/api/<path:api_path>", methods=["GET", "POST", "PUT", "DELETE"])
 def api(api_path):
     if api_path in USER_PATHS: return proxy("user", USER_PATHS[api_path])
+    if api_path == "users" or api_path.startswith("users/"): return proxy("user", "/" + api_path)
     if api_path == "me/favorites" or api_path.startswith("me/favorites/"): return proxy("user", "/" + api_path)
     if api_path == "assistant/ask": return proxy("assistant", "/ask")
+    if api_path == "conversations" or api_path.startswith("conversations/"): return proxy("chat", "/" + api_path)
     if api_path == "recommendations": return proxy("recommendation", "/recommendations")
     if api_path == "itineraries" or api_path.startswith("itineraries/"): return proxy("itinerary", "/" + api_path)
     root = api_path.split("/")[0]
@@ -35,4 +37,6 @@ def view(): return send_from_directory(PUBLIC, "view.html")
 def service(): return send_from_directory(PUBLIC, "service.html")
 @app.get("/itinerary")
 def itinerary(): return send_from_directory(PUBLIC, "itinerary.html")
+@app.get("/community")
+def community(): return send_from_directory(PUBLIC, "community.html")
 if __name__ == "__main__": app.run(port=5050, debug=False)

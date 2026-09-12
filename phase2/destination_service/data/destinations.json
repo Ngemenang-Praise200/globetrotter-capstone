@@ -9,8 +9,8 @@
       "local food",
       "culture"
     ],
-    "location": "Central Bamenda",
-    "address": "Central Market Road, Central Bamenda",
+    "location": "Commercial Avenue, Bamenda",
+    "address": "Bamenda City Main Market, Commercial Avenue, Bamenda",
     "description": "A lively market where visitors can buy local goods, try street food, and experience Bamenda daily life.",
     "highlights": [
       "Traditional crafts",
@@ -19,9 +19,8 @@
     ],
     "lat": 5.9588,
     "lon": 10.1587,
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Food%20market%202.jpg?width=480",
-    "imageCredit": "AminouT, Wikimedia Commons (CC BY-SA)",
-    "imageSource": "https://commons.wikimedia.org/wiki/File:Food_market_2.jpg"
+    "image": "/bamenda-main-market.jpg",
+    "imageCredit": "Photo provided"
   },
   {
     "id": "d3a",
@@ -36,7 +35,7 @@
     "location": "Mbengwi",
     "address": "Abi Fall Looked, Mbengwi",
     "description": "A breathtaking waterfall near Mbengwi known locally as Abi Fall Looked, perfect for hiking, nature walks, and waterfall photography.",
-    "image": "/abi-fall-resort-mbengwi.jpg",
+    "image": "/bameda-waterfall-trail.jpg",
     "highlights": [
       "Waterfall",
       "Hiking",
@@ -44,7 +43,7 @@
     ],
     "lat": 6.21,
     "lon": 10.066,
-    "imageCredit": "@wakabamenda"
+    "imageCredit": "Photo provided"
   },
   {
     "id": "d6",
@@ -69,27 +68,6 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bamenda.JPG?width=480",
     "imageCredit": "Wikimedia Commons contributor (CC BY-SA 3.0)",
     "imageSource": "https://commons.wikimedia.org/wiki/File:Bamenda.JPG"
-  },
-  {
-    "id": "d10",
-    "name": "Bamenda Coffee Caf\u00e9",
-    "category": "food",
-    "tags": [
-      "cafe",
-      "coffee",
-      "relaxation",
-      "food"
-    ],
-    "location": "SONAC Street, Bamenda",
-    "address": "Bamenda Coffee Caf\u00e9, SONAC Street, Bamenda",
-    "description": "A cozy caf\u00e9 serving local coffee, pastries, and light meals with a relaxed atmosphere.",
-    "highlights": [
-      "Local coffee",
-      "Casual seating",
-      "Snacks"
-    ],
-    "lat": 5.9583,
-    "lon": 10.1589
   },
   {
     "id": "d13",
@@ -139,48 +117,6 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bamenda%20from%20mountain%20road.jpg?width=480",
     "imageCredit": "Wikimedia Commons contributor (CC BY-SA 3.0)",
     "imageSource": "https://commons.wikimedia.org/wiki/File:Bamenda_from_mountain_road.jpg"
-  },
-  {
-    "id": "d16",
-    "name": "Royal Garden Restaurant",
-    "category": "food",
-    "tags": [
-      "restaurant",
-      "garden",
-      "family",
-      "local cuisine"
-    ],
-    "location": "Mile 4 Road, Bamenda",
-    "address": "Royal Garden Restaurant, Mile 4 Road, Bamenda",
-    "description": "A popular spot known for generous portions of regional dishes, a relaxed garden setting, and friendly service.",
-    "highlights": [
-      "Outdoor garden seating",
-      "Family-friendly",
-      "Local specialties"
-    ],
-    "lat": 5.9622,
-    "lon": 10.1598
-  },
-  {
-    "id": "d18",
-    "name": "Momo's Grill & Bar",
-    "category": "food",
-    "tags": [
-      "grill",
-      "bar",
-      "casual",
-      "local food"
-    ],
-    "location": "SONAC Street, Bamenda",
-    "address": "Momo's Grill & Bar, SONAC Street, Bamenda",
-    "description": "A casual grill and bar serving grilled meats, local sides, and cold drinks\u2014popular with both locals and visitors.",
-    "highlights": [
-      "Grilled specialties",
-      "Casual atmosphere",
-      "Evening live music"
-    ],
-    "lat": 5.961,
-    "lon": 10.159
   },
   {
     "id": "d24",
@@ -473,6 +409,28 @@
     "lat": 5.9605,
     "lon": 10.1595,
     "image": "/georges-corner.jpg",
+    "imageCredit": "Photo provided"
+  },
+  {
+    "id": "d41",
+    "name": "Bamenda III Council",
+    "category": "administrative",
+    "tags": [
+      "council",
+      "government",
+      "administration",
+      "Nkwen"
+    ],
+    "location": "Mile 4, Nkwen",
+    "address": "Bamenda III Council, Mile 4, Nkwen",
+    "description": "The council office for the Bamenda III sub-division, serving the Nkwen area and surrounding neighborhoods.",
+    "highlights": [
+      "Local council office",
+      "Administrative services"
+    ],
+    "lat": 5.9705,
+    "lon": 10.161,
+    "image": "/bamenda-iii-council.jpg",
     "imageCredit": "Photo provided"
   }
 ]

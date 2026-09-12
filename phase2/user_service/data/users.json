@@ -42,9 +42,8 @@
       "lat": 5.976,
       "lon": 10.165,
       "area": "Nkwen",
-      "source": "registration",
-      "updatedAt": "2026-08-18T01:51:49.638721+00:00",
-      "visibleToAdmin": false
+      "updatedAt": "2026-08-06T00:00:04.397262+00:00",
+      "source": "registration"
     },
     "createdAt": "2026-08-06T00:00:04.986904+00:00",
     "isAdmin": false
@@ -66,16 +65,5 @@
     },
     "createdAt": "2026-08-06T00:13:47.794289+00:00",
     "isAdmin": true
-  },
-  {
-    "id": "0yh9Nrlr7xD_FZIT",
-    "name": "Favour Zanchef",
-    "email": "favourzanche@gmail.com",
-    "password": "$2b$12$9Z2VGO4cC8TupWkFxDPqM.ztvQUx0jocu0Mraqr9pt0yd8qOMfxM.",
-    "interests": [
-      "food"
-    ],
-    "createdAt": "2026-08-16T02:15:16.851136+00:00",
-    "isAdmin": false
   }
 ]

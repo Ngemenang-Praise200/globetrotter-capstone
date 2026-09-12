@@ -991,7 +991,10 @@ function initAssistantWidget() {
       addMessage(data.answer, 'bot');
       addSuggestions(data.suggestedDestinations);
     } catch (error) {
-      addMessage("Sorry, I couldn't reach the assistant just now.", 'bot');
+      // Show the real error (e.g. "Assistant Service is unavailable.") rather
+      // than a generic message, so a genuine backend problem is visible
+      // instead of looking identical to "the assistant has nothing to say."
+      addMessage(error.message || "Sorry, I couldn't reach the assistant just now.", 'bot');
     }
   });
 }
